@@ -59,7 +59,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import views.NaiveBayes;
+//import views.NaiveBayes;
 /**
  * @author NASA-Trust-Team
  * 
@@ -1223,7 +1223,8 @@ public class DBLPParser {
 		String tsvalue;
 		String csvalue;
 		//PrintWriter writer = new PrintWriter("/Users/ShuaiWang/Desktop/Output.txt", "UTF-8");
-		FileWriter fstream = new FileWriter("/Users/ShuaiWang/Desktop/Crazy.txt",true);
+		//FileWriter fstream = new FileWriter("/Users/ShuaiWang/Desktop/Crazy.txt",true);
+		FileWriter fstream = new FileWriter(System.getProperty("user.home") + "/Crazy.txt",true);
 		BufferedWriter out = new BufferedWriter(fstream);
 		//Hashtable<String,String> p = JaccardSimilarity.datapreprocess();
 		if(authors!= null) {
